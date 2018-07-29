@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/personal_information"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/portrait"
+            android:src="@drawable/ic_me"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:contentDescription="@string/portrait" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/user_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/user_id"/>
+            <TextView
+                android:id="@+id/user_introduction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@string/user_introduction"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="15dp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="start|center_vertical"
+            android:background="@android:color/white"
+            android:text="@string/notification"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="start|center_vertical"
+            android:background="@android:color/white"
+            android:text="@string/setting" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="start|center_vertical"
+            android:background="@android:color/white"
+            android:text="@string/FAQ"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="start|center_vertical"
+            android:background="@android:color/white"
+            android:text="@string/update"/>
+    </LinearLayout>
+</LinearLayout>
